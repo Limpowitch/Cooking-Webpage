@@ -1,0 +1,39 @@
+
+  /*The mainbox of both meal of the day, and the random button  */
+  #Mainpagebox{
+    background-color:#eed9c4;
+    width:20%;
+    padding:5px;
+    margin:auto;
+    left:40%;
+    
+    border-radius: 8px;
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 5px 5px 8px black;
+    margin-top: 350px;
+    z-index: -1000;
+    
+    align-self: center;
+}
+
+  /*The text displaying "meal of the day"  */
+  #Dailymeal{
+    
+    align-self: center;
+    letter-spacing: 4px;
+    font-size: 1vw;
+}
+
+  /* The text for the random button */
+  #Randommeal{
+    align-self: center;
+    letter-spacing: 4px;
+    font-size: 0.8vw;
+  }
+
+#temppic:hover{
+  cursor:pointer;
+}

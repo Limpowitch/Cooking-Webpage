@@ -1,0 +1,8 @@
+/* Main background image of the webpage */
+body{
+    background-image: url(Darkmode.jpg);
+    /* background-image: url(Darkmode2.jpg); */
+    background-size:cover;
+    background-attachment: fixed;
+    
+  }

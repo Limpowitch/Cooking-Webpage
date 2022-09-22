@@ -1,0 +1,104 @@
+
+/* Positioning of the navigation buttons, how far apart, etc */
+#Navigationbuttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 40px; 
+}
+
+/* The background box of the navigation bar */
+#Navigatorbar{
+  background-color: #eed9c4;
+  width:98%;
+  padding:5px;
+  left:.9%;
+  box-shadow: 5px 5px 8px black;
+  border-radius: 8px;
+  position:fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+ 
+/*The size of the left armstrong  */
+}
+#Navigatorbarpicture{
+  height:80px;
+  border-radius: 8px;  
+  box-shadow: 2px 2px 5px black; 
+}
+
+/* The size, color, and font of the navigation buttons */
+.navigationbutton {
+    background-color: #fea575;
+    color: white;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    padding: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 3px;
+    font-size: .9vw;
+    box-shadow: 2px 2px 5px black;
+    width:11vw;
+  }
+  
+/*Determines the position of the dropdown menu, currently it drops down directly under the nav-bar button  */
+.navigation {
+  position: relative;
+  display: inline-block;  
+}
+
+
+/*The size, color, etc of the dropdown bar  */
+.navigationdropdown {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 134px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 11vw;
+}
+
+/* The color of the text, the box you actually click on with a link */
+.navigationdropdown a {
+  color: rgb(0, 0, 0);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Armstrong to the right*/
+.armstrongdropdown{
+  min-width: 90px;
+  width: inherit;
+  
+}
+
+/* Armstrong styling */
+#Navigatorbarpicture2{
+  height:80px;
+  border-radius: 8px;  
+  transform:scaleX(-1);
+  box-shadow: 2px 2px 5px black;
+}
+
+  
+
+/* If hovering over the textbox in dropdown menu, turn said textbox to a different shade of white */
+.navigationdropdown a:hover {background-color: #ddd;}
+
+/* If hovering over the nav-button, display the dropdown menu */
+.navigation:hover .navigationdropdown {display: block;}
+
+/* If hovering over nav-button, change the button color to green */
+.navigation:hover .navigationbutton {background-color: #3e8e41;}
+
+/* If hovering over armstrong to the right, display the armstrong dropdown menu */
+#Navigatorbarpicture2:hover .armstrongdropdown {display: block;}
+  
+
+  

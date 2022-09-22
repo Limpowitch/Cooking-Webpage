@@ -1,0 +1,50 @@
+#Categorybox{
+    background-color:#eed9c4;
+    width:50%;
+    padding:5px;
+    left: 25%;
+    
+    border-radius: 8px;
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height:fit-content;
+    min-height: 100%;
+    margin-top: 140px;
+    z-index: -1000;
+    align-self: center;
+}
+
+#Categoryboxes{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 50px;
+    padding: 10px;
+    /* background-color: red; */
+    
+    
+    
+
+}
+
+
+
+.Recipename{
+    font-family:monospace;
+    letter-spacing: 4px;
+    font-size: 0.8vw;
+    /* background-color: green; */
+    text-align: center;
+}
+
+.Recipepic{
+    border-radius: 12px;
+    width: 100%;
+    box-shadow: 2px 2px 5px black; 
+    
+    
+}
+
+
+
